@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300&family=Playfair+Display&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300&family=Outfit&family=Playfair+Display&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300&family=Outfit&family=Playfair+Display&family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300&family=Outfit:wght@300;400;700&family=Playfair+Display&family=Poppins&family=Roboto&display=swap');
+
+/* =Core
+-------------------------------------------------------------- */
+:root {
+    --white: #FFFFFF;
+    --dirty-white: #CCCCCC;
+    --black: #000;
+    --ash-grey: #8D8D8D;
+    --electric-blue: #0000F0;
+    --blue: #000054;
+    --light-grey: #EFEFEF;
+
+}
+
+/* =Typography
+-------------------------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', serif;
+}
+
+/* =Header
+-------------------------------------------------------------- */
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    max-width: 1720px;
+}
+
+.hero {
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+.navbar {
+    padding-left: 8.75rem;
+    padding-right: 8.75rem;
+    background-color: var(--electric-blue);
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.nav-link {
+    font-family: 'Outfit', sans-serif;
+    font-weight: normal normal normal;
+    font-size: 0.9375rem;
+    line-height: 1.26;
+    letter-spacing: 0px;
+    color: var(--black) !important;
+}
+
+.nBar1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: medium;
+    font-size: 1.25rem;
+    line-height: 1;
+    letter-spacing: 0px;
+    color: var(--white);
+    text-align: left;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+
+.nBar2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: medium;
+    font-size: 3rem;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    color: var(--white);
+    text-align: left;
+    opacity: 1;
+    margin-top: 0px;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.burger {
+    margin-top: 1px;
+    margin-bottom: 15px;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 1px;
+    padding-left: 2px;
+    background-color: var(--electric-blue);
+    border-color: var(--electric-blue);
+}
+
+.search {
+    margin-top: 1px;
+    margin-bottom: 10px;
+
+}
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: var(--electric-blue);
+    border-color: var(--electric-blue);
+    box-shadow: none !important;
+}
+
+
+/* =hero
+---------------------------------------------------------------- */
+
+.heroBlueArea {
+    transform: matrix(1, -0.045, 0.03, 1, 0, 0);
+    height: 68px;
+    background-color: var(--electric-blue);
+    position: relative;
+    top: -5rem;
+}
+
+.heroWhiteArea {
+    transform: matrix(1, -0.02, 0.005, 1, 0, 0);
+    height: 80px;
+    background-color: white;
+    position: relative;
+    top: -7.7rem;
+}
+
+.heroPicture {
+    height: 550px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.heroWhiteAreaP {
+    font-family: 'Roboto', serif;
+    font-weight: normal;
+    font-size: 0.75rem;
+    line-height: 1.3;
+    letter-spacing: 0px;
+    color: var(--ash-grey);
+    opacity: 1;
+    text-align: right;
+    position: relative;
+    top: -13rem;
+    padding-right: 1rem;
+    margin-bottom: -110px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: medium;
+    font-size: 3rem;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    color: var(--white);
+    text-transform: none;
+
+}
+
+.heroP {
+    color: var(--white);
+
+}
+
+.heroTextWrapper {
+    position: absolute;
+    top: 17rem;
+    margin-top: -4rem;
+    padding-left: 11rem;
+    z-index: 1;
+}
+
+#destinations-hero::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 550px;
+    right: 50vw;
+    display: block;
+    background: linear-gradient(90deg, #0000F082 0%, #0000F000 100%);
+}
+
+.offcanvas-body {
+    background-color: var(--electric-blue);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 100%;
+}
+
+.menu {
+    font-family: 'Poppins', sans-serif;
+    font-weight: medium;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    letter-spacing: 0px;
+    color: var(--white);
+    opacity: 1;
+    text-align: left;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.icon {
+    border: 2px solid var(--electric-blue);
+    opacity: 1;
+    color: #FFFFFF;
+    padding: 20px;
+    margin-top: 1px;
+}
+
+.offcanvas.show {
+    background-color: var(--electric-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* =cta (call to action) 
+------------------------------------------------------------------*/
+.container-ctaContainer {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.one {
+    color: var(--white);
+    opacity: 1;
+    text-align: left
+}
+
+.two,
+.three {
+    color: var(--black);
+    opacity: 1;
+    text-align: left;
+    padding-right: 80px;
+}
+
+.welcom {
+    text-transform: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: medium;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+
+.backgroundBlue {
+    background: var(--electric-blue);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    margin-right: 80px;
+    padding-right: 70px;
+    position: relative;
+}
+
+.menu1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: medium;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    color: var(--blue);
+    opacity: 1;
+    text-align: left;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.icon1 {
+    opacity: 1;
+    text-align: left;
+}
+
+.iconMenu {
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.triangle {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-top: 15px solid transparent;
+    border-left: 30px solid var(--electric-blue);
+    border-bottom: 15px solid transparent;
+    top: 9%;
+}
+
+/* =Footer
+-------------------------------------------------------------- */
+
+footer {
+    background-color: var(--electric-blue);
+    color: var(--dirty-white);
+    font-family: 'Roboto', serif;
+    font-weight: normal;
+    font-size: 0.9rem;
+    line-height: 2.4;
+    letter-spacing: 0px;
+}
+
+.nav-link1,
+.navbar-brand {
+    color: var(--dirty-white);
+    font-family: 'Roboto', serif;
+    font-weight: normal;
+    font-size: 0.9rem;
+    line-height: 2.4;
+    letter-spacing: 0px;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+
+
+/* =Typical phone: Portrait
+-------------------------------------------------------------- */
+
+@media (min-device-width : 1201px) {
+    .triangle {
+        right: -6%;
+    }
+}
+
+@media (min-device-width : 992px) and (max-device-width : 1200px) {
+    .triangle {
+        right: -10%;
+    }
+}
+
+@media (max-device-width : 991px) {
+    .triangle {
+        right: -4%;
+    }
+}
+
+/*=Tallinn
+-------------------------------------------------------------------*/
+.firstCtaTallinn {
+    padding-right: 300px;
+    padding-left: 300px;
+    margin-bottom: 150px;
+}
+
+.oneCtaTallinnH2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: medium;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    color: var(--black) !important;
+    opacity: 1;
+    text-decoration: none;
+}
+
+.twoCtaTallinnP {
+    margin-top: 60px;
+}
+
+.ctaPicture {
+    width: 100%;
+}
+
+.threeCtaTallinn {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.fourCtaTallinn,
+.fiveCtaTallinn {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.backgroundLightGrey {
+    background: var(--light-grey);
+}
+
+.sixCtaTallinn {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+
+.ctaLastRow {
+    margin-top: 150px;
+    margin-bottom: 500px;
+
+}
+
+.ctaLastP {
+    text-align: center;
+}
+
+.oneCtaTallinnH3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: medium;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    color: var(--black) !important;
+    opacity: 1;
+    text-decoration: none !important;
+    margin-top: 30px;
+    text-transform: none;
+}
+
+.emblem {
+    width: 122px;
+    height: 122px;
+    border-radius: 50%;
+    border: 2px solid #0000F0;
+    opacity: 1;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.borderIcon {
+    height: 5rem;
+    width: 5rem;
+}
